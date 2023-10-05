@@ -29,7 +29,6 @@ resource "aws_s3_object" "app" {
 
 resource "aws_s3_bucket" "bucket" {
   bucket = aws_s3_bucket.app.id
-  acl    = "public-read"
 }
 
 resource "aws_s3_bucket_website_configuration" "terramino" {
